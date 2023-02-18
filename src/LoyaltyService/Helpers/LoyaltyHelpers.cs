@@ -18,7 +18,7 @@ public static class LoyaltyHelpers
             >= 10 => Types.Silver,
             _ => Types.Bronze
         };
-    
+
     public static int CalcDiscount(Loyalty loyalty)
         => loyalty.Status switch
         {
@@ -27,5 +27,4 @@ public static class LoyaltyHelpers
             Types.Gold => 10,
             _ => throw new Exception("Wrong loyalty status")
         };
-
 }

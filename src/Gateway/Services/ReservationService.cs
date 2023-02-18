@@ -1,6 +1,5 @@
 using Gateway.Common;
 using Gateway.Data.Dtos;
-using Gateway.Helpers;
 using SharedKernel.Common.AbstractClasses;
 using SharedKernel.Exceptions;
 

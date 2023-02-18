@@ -1,5 +1,4 @@
 using System.ComponentModel.DataAnnotations;
-using Gateway.Constants;
 using Gateway.Data.Dtos;
 using Gateway.Services;
 using Microsoft.AspNetCore.Mvc;
@@ -23,5 +22,4 @@ public class HotelsController : ControllerBase
     public async Task<ActionResult<PaginationModel<HotelDto>>> GetAll([FromQuery, Required] int page = 1,
         [FromQuery, Required] int size = 10)
         => Ok(await _reservationClientService.GetAllHotelsAsync(page, size));
-
 }

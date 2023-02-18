@@ -4,7 +4,6 @@ using AutoMapper;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using ReservationService.Data;
-using ReservationService.Data.Filters;
 using SharedKernel.Common.AbstractClasses;
 using SharedKernel.Extensions;
 

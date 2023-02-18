@@ -1,4 +1,3 @@
-using System.Linq.Expressions;
 using AutoMapper;
 using LoyaltyService.Common;
 using LoyaltyService.Data;
@@ -6,7 +5,6 @@ using LoyaltyService.Data.Dtos;
 using LoyaltyService.Data.Entities;
 using LoyaltyService.Data.Filters;
 using LoyaltyService.Helpers;
-using Microsoft.AspNetCore.Mvc;
 using SharedKernel.Extensions;
 
 namespace LoyaltyService.Controllers;

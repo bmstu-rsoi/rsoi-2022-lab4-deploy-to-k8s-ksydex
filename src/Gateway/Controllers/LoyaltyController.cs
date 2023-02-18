@@ -1,4 +1,3 @@
-using System.ComponentModel.DataAnnotations;
 using Gateway.Constants;
 using Gateway.Data.Dtos;
 using Gateway.Services;
