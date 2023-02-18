@@ -13,7 +13,7 @@ rental:
     image:
       name: ksydex/payment-service
       version: "1.0"
-    database: 
+    database:
       name: payment
 
 car:
@@ -22,7 +22,7 @@ car:
     image:
       name: ksydex/reservation-service
       version: "1.0"
-    database: 
+    database:
       name: reservation
 
 gateway:
