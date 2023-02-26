@@ -9,18 +9,16 @@ default_database:
 users:
   - name: postgres
     password: postgres
-  - name: program
-    password: test
 
 datasets:
   - name: loyalties
-    user: program
+    user: postgres
 
   - name: payments
-    user: program
+    user: postgres
 
   - name: reservations
-    user: program
+    user: postgres
 
 resources:
   requests:

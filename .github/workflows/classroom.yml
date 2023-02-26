@@ -3,10 +3,6 @@ on:
   push:
     branches: [ master ]
 
-env:
-  KUBE_HOST: ${{ secrets.KUBE_HOST }}
-  KUBE_TOKEN: ${{ secrets.KUBE_TOKEN }}
-
 jobs:
   build:
     name: Autograding
@@ -30,15 +26,6 @@ jobs:
         run: |
           sudo chmod +x ./scripts/build-images.sh
           ./scripts/build-images.sh
-          #- name: Deploy
-          # run: |
-          #   echo "Deploy to Kube"
-          #    echo kubectl config set-cluster rsoi --server="KUBE_HOST" --insecure-skip-tls-verify=true
-          #    kubectl config set-cluster rsoi --server="$KUBE_HOST" --insecure-skip-tls-verify=true
-          #   echo kubectl config set-credentials cloud_okteto_com-user --token=KUBE_TOKEN
-          #    kubectl config set-credentials cloud_okteto_com-user --token="$KUBE_TOKEN"
-          #    echo kubectl config set-context default --cluster=rsoi --user=cloud_okteto_com-user --namespace=\"ksydex\"
-          #    kubectl config set-context default --cluster=rsoi --user=cloud_okteto_com-user --namespace="ksydex"
       
 #      - name: Run API Tests
 #        uses: matt-ball/newman-action@master
