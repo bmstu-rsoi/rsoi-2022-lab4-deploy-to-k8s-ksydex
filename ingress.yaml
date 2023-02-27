@@ -23,4 +23,5 @@ spec:
                 name: gateway
                 port:
                   name: http
-
+  
+  sudo ln -s /etc/nginx/sites-available/lukyanov.k8s.tonnus.io /etc/nginx/sites-enabled/lukyanov.k8s.tonnus.io

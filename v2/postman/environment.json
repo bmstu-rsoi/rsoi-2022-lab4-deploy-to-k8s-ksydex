@@ -4,7 +4,7 @@
 	"values": [
 		{
 			"key": "baseUrl",
-			"value": "http://app.ksydex.cloud.okteto.net",
+			"value": "https://lukyanov.k8s.tonnus.io",
 			"enabled": true
 		}
 	],
